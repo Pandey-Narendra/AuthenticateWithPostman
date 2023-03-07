@@ -1,0 +1,173 @@
+{
+	"id": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+	"name": "Sanctum Auth Api",
+	"description": "",
+	"order": [
+		"e4eddeda-3992-47fe-d678-ae3917aa65da",
+		"102f06af-948a-2230-407b-0260d41d67b5",
+		"e88d15f6-01eb-84aa-759d-39cdaf1e8eed",
+		"a7f55544-5d48-07cb-fe9d-da0bba3df47e",
+		"c329ec7d-3836-63e8-1520-030a5573685d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1669356590468,
+	"owner": "24614475",
+	"public": false,
+	"requests": [
+		{
+			"id": "102f06af-948a-2230-407b-0260d41d67b5",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+			"data": null,
+			"dataMode": "params",
+			"name": "User Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669358820209,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a7f55544-5d48-07cb-fe9d-da0bba3df47e",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+			"data": null,
+			"dataMode": "params",
+			"name": "Logged User Data",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669453796036,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c329ec7d-3836-63e8-1520-030a5573685d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer 10|dI3KAo1wTLHU7K2rb0cme2LO8nbkTeL2I8dvarIg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 10|dI3KAo1wTLHU7K2rb0cme2LO8nbkTeL2I8dvarIg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/changepassword",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+			"data": null,
+			"dataMode": "params",
+			"name": "Change User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669457226345,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e4eddeda-3992-47fe-d678-ae3917aa65da",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1669361532136,
+			"name": "User Registration",
+			"description": "",
+			"collectionId": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\" : \"testname\",\n\t\"email\" : \"testemail@gmail.com\",\n\t\"password\" : \"123456\",\n\t\"password_confirmation\" : \"123456\",\n\t\"tc\" : \"true\"\n}"
+		},
+		{
+			"id": "e88d15f6-01eb-84aa-759d-39cdaf1e8eed",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer 6|P72XFyWtWS020nlYEeOvIAJR99NLLW2Dyl0Gh6MT\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 6|P72XFyWtWS020nlYEeOvIAJR99NLLW2Dyl0Gh6MT",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/logout",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d6ee1b1c-184f-e8a9-1a52-4b26bf63aaaa",
+			"data": null,
+			"dataMode": "params",
+			"name": "User Logout",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669453751774,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
